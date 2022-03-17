@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>form submit</title>
+</head>
+<body>
+    <div class="student-form">
+        <h1>Submit Your Form</h1>
+        <form action="https://formspree.io/f/mvolqbdo" method="POST">  
+            <label>Full Name</label>          
+            <input type="text" placeholder="Full Name" name="Name" required>
+            <label>Email</label>
+            <input type="email" placeholder="Email" name="Email" required>
+            <label>Phone No</label>
+            <input type="text" placeholder="Phone Number" name="Phone Number" required>
+            <label>English Level</label>
+            <select name="Level">
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advance">Advance</option>
+            </select>
+            <label>Please Select the best answer for you.</label>
+            <select name="Payment">
+                <option value="I can pay 10$ for each lesson">I can pay 10$ for each lesson</option>
+                <option value="My supporter person / case manager can pay for my lessons">My supporter person / case manager can pay for my lessons</option>
+                <option value="I need help finding a sponsor to pay for my lessons">I need help finding a sponsor to pay for my lessons</option>
+            </select>
+            <label>Your Preferred Days (2 days Only)</label>
+            <div class="days">
+                <input type="checkbox" name="Days" value="Mon">Mon
+                <input type="checkbox" name="Days" value="Teus">Teus
+                <input type="checkbox" name="Days" value="Wed">Wed
+                <input type="checkbox" name="Days" value="Thurs">Thurs
+                <input type="checkbox" name="Days" value="Fri">Fri
+                <input type="checkbox" name="Days" value="Sat">Sat
+                <input type="checkbox" name="Days" value="Sun">Sun
+            </div>
+            <label>Your Preferred Time (Sydney Time)</label>
+            <div class="days">
+                <input type="checkbox" name="Time" value="8 - 12 AM">8 - 12 AM
+                <input type="checkbox" name="Time" value="1 - 8 Pm">1 - 8 Pm
+            </div>
+            <br><div class="checkbox">
+                <input type="checkbox" name="Condition" value="Agreed"> I understand this message does not guarantee me a place in Zoom class. 
+                However, I hope your plans to start these classes are successful and that I hear good news from you soon.  
+            </div>
+            <button type="submit" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
